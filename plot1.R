@@ -11,7 +11,7 @@ cal_lines <- function(input = "household_power_consumption.txt",sep = c(";",".")
     tmp <- strsplit(tline,";")[[1]][1]
     ##print(tmp)
     if (tmp == end_date){print(tmp);break;}
-    if (tmp == start_date & flag == 0){print(tmp);flag <- 1;}
+    if (tmp == start_date & flag == 0){print(tmp);flag <- 1;}else{print(tmp);}
     if (flag == 1){ilines <- ilines + 1}
     else
     {iskip <- iskip + 1}

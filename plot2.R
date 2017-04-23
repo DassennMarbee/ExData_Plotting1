@@ -1,4 +1,4 @@
-#Sys.setlocale(category = "LC_ALL", locale = "eng") If you are using a non-english R studio, unannotate this line
+Sys.setlocale(category = "LC_ALL", locale = "eng")
 
 cal_lines <- function(input = "household_power_consumption.txt",sep = c(";","."),start_date = "1/2/2007",end_date = "3/2/2007")
 {
